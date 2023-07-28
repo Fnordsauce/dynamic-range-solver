@@ -1,0 +1,18 @@
+2023-07-14
+_____________
+
+1. Finished individual combo div and adding rank value 
+
+
+2. Rank ID functionality 
+    a. Bottom 50% capabilities 
+
+Can you Grab a prop from a component?
+
+
+Bottom 25 Problem 
+-> How can i compunicate between teh button click and sending to the component to change colours 
+- >right now the combo can be changed in the div itself onclick 
+    -> I need to pass teh id's of the combos that need to be changed 
+    -> it needs to recognize the ID correlated to the div and rerender with different colours
+    -> combos (126-169)

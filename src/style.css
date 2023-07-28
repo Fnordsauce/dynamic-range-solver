@@ -1,0 +1,1398 @@
+@import url(https://db.onlinewebfonts.com/c/64614abc4eb19976e5d29c8d3335a350?family=GothamRounded-Medium);
+.main {
+  background-color: #0b111d;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex;
+  width: 100%;
+}
+.disabled {
+  user-select: none;
+  -webkit-user-select: none; /*Safari*/
+  -moz-user-select: none; /*Firefox*/
+}
+
+.main .div {
+  background: linear-gradient(
+    180deg,
+    rgba(39.31, 57.52, 255, 0.1) 0.29%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  user-select: none;
+  -webkit-user-select: none; /*Safari*/
+  -moz-user-select: none; /*Firefox*/
+  background-color: #0b111d;
+  border: 1px none;
+  height: 1024px;
+  position: relative;
+  width: 1440px;
+}
+
+.main .frame {
+  align-items: flex-start;
+  background-color: #0b111d;
+  border: 0.87px solid;
+  border-color: #2a2a2e;
+  border-radius: 6.93px;
+  display: flex;
+  gap: 3.46px;
+  left: 305px;
+  overflow: hidden;
+  padding: 14.97px;
+  position: absolute;
+  top: 111px;
+  width: fit-content;
+}
+
+.main .frame-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 3.46px;
+  position: relative;
+  width: 55.42px;
+}
+
+.main .box {
+  align-items: center;
+  background-color: #61489a;
+  border-radius: 6.06px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.66px;
+  height: 55.42px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 19.05px 17.32px;
+  position: relative;
+  width: 55.42px;
+}
+
+@font-face {
+  font-family: "GothamRounded-Medium";
+  src: url("https://db.onlinewebfonts.com/t/64614abc4eb19976e5d29c8d3335a350.eot");
+  src: url("https://db.onlinewebfonts.com/t/64614abc4eb19976e5d29c8d3335a350.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/64614abc4eb19976e5d29c8d3335a350.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/64614abc4eb19976e5d29c8d3335a350.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/64614abc4eb19976e5d29c8d3335a350.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/64614abc4eb19976e5d29c8d3335a350.svg#GothamRounded-Medium")
+      format("svg");
+}
+
+.main .text {
+  color: darkgrey;
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: -6.11px;
+  margin-right: -6.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-wrapper {
+  align-items: center;
+  background-color: #61489a;
+  border-radius: 3.46px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.66px;
+  height: 55.42px;
+  justify-content: center;
+  padding: 19.05px 17.32px;
+  position: relative;
+  width: 55.42px;
+}
+
+.main .text-2 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -11.61px;
+  margin-right: -11.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-3 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -13.11px;
+  margin-right: -13.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .div-wrapper {
+  align-items: center;
+  background-color: #e88e19;
+  border-radius: 3.46px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.66px;
+  height: 55.42px;
+  justify-content: center;
+  padding: 19.05px 17.32px;
+  position: relative;
+  width: 55.42px;
+}
+
+.main .text-4 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -10.61px;
+  margin-right: -10.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .box-2 {
+  align-items: center;
+  background-color: #9b5379;
+  border-radius: 3.46px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.66px;
+  height: 55.42px;
+  justify-content: center;
+  padding: 19.05px 17.32px;
+  position: relative;
+  width: 55.42px;
+}
+
+.main .text-5 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -9.61px;
+  margin-right: -9.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .box-3 {
+  align-items: center;
+  background-color: #42ae4d;
+  border-radius: 3.46px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.66px;
+  height: 55.42px;
+  justify-content: center;
+  padding: 19.05px 17.32px;
+  position: relative;
+  width: 55.42px;
+}
+
+.main .text-6 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -11.11px;
+  margin-right: -11.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-7 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: -10.61px;
+  margin-right: -10.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-8 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -4.61px;
+  margin-right: -4.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-9 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -12.61px;
+  margin-right: -12.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-10 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -10.11px;
+  margin-right: -10.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .box-4 {
+  align-items: center;
+  background-color: var(--gray-800);
+  border-radius: 3.46px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.66px;
+  height: 55.42px;
+  justify-content: center;
+  padding: 19.05px 17.32px;
+  position: relative;
+  width: 55.42px;
+  border: 1px solid rgb(38, 38, 91);
+}
+.main .box-4:hover {
+  align-items: center;
+  background-color: rgb(38, 38, 91);
+  border-radius: 3.46px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.66px;
+  height: 55.42px;
+  justify-content: center;
+  padding: 19.05px 17.32px;
+  position: relative;
+  width: 55.42px;
+}
+
+.main .text-11 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -10.61px;
+  margin-right: -10.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-12 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -11.11px;
+  margin-right: -11.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .box-5 {
+  align-items: center;
+  background-color: #61489a;
+  border-radius: 3.46px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.66px;
+  height: 55.42px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 19.05px 17.32px;
+  position: relative;
+  width: 55.42px;
+}
+
+.main .text-13 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: -11.61px;
+  margin-right: -11.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-14 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -7.61px;
+  margin-right: -7.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-15 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -12.11px;
+  margin-right: -12.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-16 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -12.11px;
+  margin-right: -12.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-17 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -11.61px;
+  margin-right: -11.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-18 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -12.61px;
+  margin-right: -12.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-19 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: -9.11px;
+  margin-right: -9.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-20 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -8.11px;
+  margin-right: -8.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-21 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -1.11px;
+  margin-right: -1.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-22 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -9.11px;
+  margin-right: -9.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-23 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -9.11px;
+  margin-right: -9.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-24 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -8.61px;
+  margin-right: -8.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-25 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -9.61px;
+  margin-right: -9.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-26 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: -8.11px;
+  margin-right: -8.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-27 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -6.61px;
+  margin-right: -6.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-28 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -3.11px;
+  margin-right: -3.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-29 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -10.11px;
+  margin-right: -10.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .box-6 {
+  align-items: center;
+  background-color: #9b5379;
+  border-radius: 3.46px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.66px;
+  height: 55.42px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 19.05px 17.32px;
+  position: relative;
+  width: 55.42px;
+}
+
+.main .text-30 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: -10.11px;
+  margin-right: -10.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-31 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -8.61px;
+  margin-right: -8.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-32 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -3.61px;
+  margin-right: -3.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-33 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: -9.61px;
+  margin-right: -9.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-34 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -7.11px;
+  margin-right: -7.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-35 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -2.61px;
+  margin-right: -2.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-36 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -7.61px;
+  margin-right: -7.61px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .box-7 {
+  align-items: center;
+  background-color: #e88e19;
+  border-radius: 3.46px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.66px;
+  height: 55.42px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 19.05px 17.32px;
+  position: relative;
+  width: 55.42px;
+}
+
+.main .text-37 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -7.11px;
+  margin-right: -7.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-38 {
+  color: var(--gray-400);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -8.11px;
+  margin-right: -8.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .text-39 {
+  color: var(--white);
+  font-family: "GothamRounded-Medium";
+  font-size: 20.8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: -3.47px;
+  margin-left: -4.11px;
+  margin-right: -4.11px;
+  margin-top: -5.21px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .group {
+  background-color: #0b111d;
+  height: 20px;
+  left: 306px;
+  position: absolute;
+  top: 937px;
+  width: 149px;
+}
+
+.main .text-40 {
+  color: #eeeeeeee;
+  font-family: "Gotham Rounded-Light", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.main .text-41 {
+  color: #eeeeeeee;
+  font-family: "Gotham Rounded-Light", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 70px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.main .menu {
+  align-items: flex-start;
+  background-color: #0b111d;
+  border-color: var(--gray-shadesdark-shade);
+  border-right-style: solid;
+  border-right-width: 1px;
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  justify-content: space-between;
+  left: 0;
+  padding: 24px 24px 32px;
+  position: absolute;
+  top: 0;
+  width: 266px;
+}
+
+.main .top {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  position: relative;
+}
+
+.main .profile {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+}
+
+.main .avatar {
+  height: 56px;
+  min-width: 56px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 25px;
+}
+
+.main .list-item {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: fit-content;
+}
+
+.main .list-manu {
+  align-items: flex-start;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  position: relative;
+  width: fit-content;
+}
+
+.main .content {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  height: 24px;
+  position: relative;
+  width: 186px;
+}
+
+.main .grid-four-wrapper {
+  background-color: var(--blueprimary);
+  border-radius: 8px;
+  height: 32px;
+  margin-bottom: -4px;
+  margin-top: -4px;
+  min-width: 32px;
+  position: relative;
+}
+
+.main .grid-four {
+  height: 16px !important;
+  left: 8px !important;
+  position: absolute !important;
+  top: 8px !important;
+  width: 16px !important;
+}
+
+.main .text-42 {
+  color: #ffffff;
+  font-family: "GothamRounded-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .grid-four-01-wrapper {
+  background-color: #151b28;
+  /* background-image: url(../../../static/img/avatar-1.png); */
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 8px;
+  height: 32px;
+  margin-bottom: -4px;
+  margin-top: -4px;
+  min-width: 32px;
+  position: relative;
+}
+
+.main .text-43 {
+  color: #eeeeeeee;
+  font-family: "Gotham Rounded-Light", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .bottom {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.main .overlap-wrapper {
+  height: 418px;
+  left: 1128px;
+  position: absolute;
+  top: 112px;
+  width: 288px;
+}
+
+.main .overlap {
+  height: 418px;
+  position: relative;
+  width: 290px;
+}
+
+.main .overlap-group-wrapper {
+  height: 418px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 290px;
+}
+
+.main .overlap-group {
+  background-color: #0b111d;
+  border: 1px solid;
+  border-color: #2a2a2e;
+  border-radius: 8px;
+  height: 418px;
+  position: relative;
+  width: 288px;
+}
+
+.main .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "GothamRounded-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  left: 19px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 23px;
+  white-space: nowrap;
+  width: 111px;
+}
+
+.main .group-2 {
+  height: 46px;
+  left: 20px;
+  position: absolute;
+  top: 64px;
+  width: 180px;
+}
+
+.main .text-wrapper-3 {
+  color: #eeeeeeee;
+  font-family: "GothamRounded-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  left: 65px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 8px;
+  white-space: nowrap;
+  width: 111px;
+}
+
+.main .text-wrapper-4 {
+  color: #7d8da7;
+  font-family: "Gotham Rounded-Light", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  left: 65px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 30px;
+  white-space: nowrap;
+  width: 111px;
+}
+
+.main .rectangle {
+  height: 46px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 57px;
+}
+
+.main .group-3 {
+  height: 46px;
+  left: 20px;
+  position: absolute;
+  top: 134px;
+  width: 180px;
+}
+
+.main .group-4 {
+  height: 46px;
+  left: 20px;
+  position: absolute;
+  top: 204px;
+  width: 180px;
+}
+
+.main .group-5 {
+  height: 46px;
+  left: 20px;
+  position: absolute;
+  top: 274px;
+  width: 180px;
+}
+
+.main .group-6 {
+  height: 46px;
+  left: 20px;
+  position: absolute;
+  top: 344px;
+  width: 180px;
+}
+
+.main .top-bar {
+  align-items: center;
+  background-color: #0b111d;
+  display: flex;
+  justify-content: space-between;
+  left: 266px;
+  padding: 16px 40px;
+  position: absolute;
+  top: 0;
+  width: 1174px;
+}
+
+.main .saved-copies {
+  align-items: center;
+  background-color: #8b8ba714;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+  width: fit-content;
+}
+
+.main .svgexport {
+  height: 16px !important;
+  min-width: 16px !important;
+  position: relative !important;
+}
+
+.main .text-wrapper-5 {
+  color: #7d8da7;
+  font-family: "Gotham Rounded-Light", Helvetica;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .frame-3 {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  width: fit-content;
+}
+
+.main .frame-4 {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  position: relative;
+  width: fit-content;
+}
+
+.main .frame-5 {
+  align-items: center;
+  display: flex;
+  gap: 23px;
+  position: relative;
+  width: fit-content;
+}
+
+.main .frame-6 {
+  align-items: center;
+  background-color: var(--blueprimary);
+  border-radius: 6px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 8px 10px;
+  position: relative;
+  width: fit-content;
+}
+
+.main .icon-tick-circle {
+  height: 20px;
+  min-width: 20px;
+  position: relative;
+}
+
+.main .text-wrapper-6 {
+  color: #ffffff;
+  font-family: "GothamRounded-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.main .line {
+  height: 20px;
+  margin-right: -1px;
+  min-width: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.main .avatar-2 {
+  background-color: #090d30;
+  border-radius: 200px;
+  height: 40px;
+  min-width: 40px;
+  position: relative;
+}
+
+.main .text-44 {
+  color: var(--blueprimary);
+  font-family: "GothamRounded-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  white-space: nowrap;
+  width: 40px;
+}
+
+.main .group-7 {
+  height: 36px;
+  left: 693px;
+  position: absolute;
+  top: 920px;
+  width: 400px;
+}
+
+.main .saved-copies-2 {
+  align-items: center;
+  background-color: #61489a;
+  border-radius: 6px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  width: fit-content;
+}
+
+.main .saved-copies-3 {
+  align-items: center;
+  background-color: #e98e19;
+  border-radius: 6px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  left: 141px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  width: fit-content;
+}
+
+.main .saved-copies-4 {
+  align-items: center;
+  background-color: #43ae4d;
+  border-radius: 6px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  left: 282px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  width: fit-content;
+}
+
+.main .group-8 {
+  height: 108px;
+  left: 1128px;
+  position: absolute;
+  top: 568px;
+  width: 104px;
+}
+
+.main .box-8 {
+  background-color: #e88e19;
+  border: 2px solid;
+  border-color: #252733;
+  border-radius: 3.46px;
+  height: 48px;
+  left: -2px;
+  position: absolute;
+  top: -2px;
+  width: 48px;
+}
+
+.main .box-9 {
+  background-color: #61489a;
+  border: 2px solid;
+  border-color: #2a2a2e;
+  border-radius: 3.46px;
+  height: 48px;
+  left: 58px;
+  position: absolute;
+  top: -2px;
+  width: 48px;
+}
+
+.main .box-10 {
+  background-color: #9b5379;
+  border: 2px solid;
+  border-color: #2a2a2e;
+  border-radius: 3.46px;
+  height: 48px;
+  left: -2px;
+  position: absolute;
+  top: 62px;
+  width: 48px;
+}
+
+.main .box-11 {
+  background-color: #43ae4d;
+  border: 2px solid;
+  border-color: #2a2a2e;
+  border-radius: 3.46px;
+  height: 48px;
+  left: 58px;
+  position: absolute;
+  top: 62px;
+  width: 48px;
+}
