@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { FrameContext } from "./FrameContext";
 
 export function TopNav() {
+  const { setUndone, setReset } = useContext(FrameContext);
   return (
     <div className="top-bar">
       <div className="saved-copies">
@@ -8,7 +10,7 @@ export function TopNav() {
         <div className="text-wrapper-5">Settings</div>
       </div>
       <div className="frame-3">
-        <div className="saved-copies">
+        <div className="saved-copies" onClick={() => setUndone(true)}>
           <img
             className="svgexport"
             alt="Svgexport"
@@ -24,7 +26,7 @@ export function TopNav() {
           />
           <div className="text-wrapper-5">Redo</div>
         </div>
-        <div className="saved-copies">
+        <div className="saved-copies" onClick={() => setReset(true)}>
           <img
             className="svgexport"
             alt="Svgexport"

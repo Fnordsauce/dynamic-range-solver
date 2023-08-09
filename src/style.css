@@ -1185,6 +1185,20 @@
   position: relative;
   width: fit-content;
 }
+.main .saved-copies:hover {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  align-items: center;
+  background-color: rgba(251, 251, 255, 0.078);
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+  width: fit-content;
+}
 
 .main .svgexport {
   height: 16px !important;
