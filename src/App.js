@@ -5,6 +5,8 @@ import { TopNav } from "./TopNav";
 import { FrameProvider } from "./FrameContext";
 import "./style.css";
 import React, { useReducer } from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+
 const intialState = {
   status: "notReady",
 };
@@ -18,12 +20,14 @@ export default function App() {
   return (
     <div className="main">
       {window.addEventListener("contextmenu", (e) => e.preventDefault())}
-      <FrameProvider>
-        <ChartBuilder dispatch={dispatch} oncontextmenu="return false;" />
-        <SideNav />
-        <TopNav />
-        <ColourSelector />
-      </FrameProvider>
+      <ChakraProvider>
+        <FrameProvider>
+          <ChartBuilder dispatch={dispatch} oncontextmenu="return false;" />
+          <SideNav />
+          <TopNav />
+          <ColourSelector />
+        </FrameProvider>
+      </ChakraProvider>
     </div>
   );
 }
