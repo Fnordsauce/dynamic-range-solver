@@ -8,6 +8,7 @@ import {
   ModalCloseButton,
   useDisclosure,
   Button,
+  Link,
 } from "@chakra-ui/react";
 import React from "react";
 
@@ -23,7 +24,6 @@ function AuthModal() {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Dynamic Range Solver</ModalHeader>
           <ModalCloseButton />
           <ModalBody></ModalBody>
 
