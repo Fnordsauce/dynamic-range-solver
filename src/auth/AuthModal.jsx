@@ -19,7 +19,7 @@ function AuthModal() {
   //   const [modalState, setModalState] = useRecoilState(authModalState);
   return (
     <>
-      <Button onClick={onOpen}>LOGIN</Button>
+      <Button onClick={onOpen}>Log In</Button>
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />

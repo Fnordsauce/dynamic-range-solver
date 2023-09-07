@@ -14,20 +14,26 @@ function Login() {
 
   return (
     <div>
-      <Box display="flex" justifyContent="center" alignItems="center" mb={4}>
+      <Box display="flex" flexDirection="column" alignItems="center" mb={4}>
         <img src="img\final_logo.png" alt="Image" width="100" height="100" />
+        <h1
+          style={{ textAlign: "center", fontSize: "24px", fontWeight: "bold" }}
+        >
+          Log In
+        </h1>{" "}
+        {/* Add the title */}
       </Box>
       <FormControl mb={4} pl={4} pr={4}>
-        <FormLabel textAlign="center">Email address</FormLabel>
+        <FormLabel textAlign="center">Email address:</FormLabel>
         <Input type="email" />
       </FormControl>
       <FormControl mb={4} pl={4} pr={4}>
-        <FormLabel textAlign="center">Password</FormLabel>
+        <FormLabel textAlign="center">Password:</FormLabel>
         <Input type="password" />
       </FormControl>
       {/* Add the signup link */}
       <Box display="flex" justifyContent="center" alignItems="center">
-        <Link to="/signup">Need an Account? Signup</Link>
+        <Link to="/Signup">Need an Account? Sign Up</Link>
       </Box>
     </div>
   );

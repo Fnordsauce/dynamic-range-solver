@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { FrameContext } from "./FrameContext";
+import AuthModal from "./auth/AuthModal";
+import SignUpModal from "./auth/SignUpModal";
 
 export function TopNav() {
   const { setUndone, setReset } = useContext(FrameContext);
@@ -46,6 +48,8 @@ export function TopNav() {
             <div className="text-wrapper-6">Save</div>
           </div>
           <img className="line" alt="Line" src="img/line-1.svg" />
+          <AuthModal />
+          <SignUpModal />
         </div>
         <div className="avatar-5">
           {/* <div className="text-44">OR</div> */}

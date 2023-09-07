@@ -1,5 +1,6 @@
 import React from "react";
 import AuthModal from "./auth/AuthModal";
+import SignUpModal from "./auth/SignUpModal";
 
 export function SideNav() {
   return (
@@ -62,7 +63,6 @@ export function SideNav() {
               <div className="avatar-4">
                 {/* <GridFour01 className="grid-four" color="#7D8DA7" /> */}
               </div>
-              <AuthModal />
             </div>
           </div>
         </div>
