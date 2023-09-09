@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Center,
   FormControl,
   FormLabel,
@@ -7,10 +8,22 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { auth } from "../firebase/firebase";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [signInWithEmailAndPassword, user, loading, error] =
+    useSignInWithEmailAndPassword(auth);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    if (!email || !password) return;
+
+    signInWithEmailAndPassword(email, password);
+  }
 
   return (
     <div>
@@ -25,16 +38,29 @@ function Login() {
       </Box>
       <FormControl mb={4} pl={4} pr={4}>
         <FormLabel textAlign="center">Email address:</FormLabel>
-        <Input type="email" />
+        <Input
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
       </FormControl>
       <FormControl mb={4} pl={4} pr={4}>
         <FormLabel textAlign="center">Password:</FormLabel>
-        <Input type="password" />
+        <Input
+          type="password"
+          id="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
       </FormControl>
       {/* Add the signup link */}
       <Box display="flex" justifyContent="center" alignItems="center">
         <Link to="/Signup">Need an Account? Sign Up</Link>
       </Box>
+      <Button colorScheme="purple" ml={340} onClick={handleSubmit}>
+        Submit
+      </Button>
     </div>
   );
 }

@@ -10,12 +10,20 @@ import {
   Button,
   Link,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useContext, useEffect } from "react";
 
 import Login from "./Login";
+import { AuthContext } from "./AuthContext";
 
-function AuthModal() {
+function AuthModal({ dispatch }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { userStatus } = useContext(AuthContext);
+
+  useEffect(() => {
+    if (userStatus === true) {
+      onClose();
+    }
+  }, [userStatus]);
   //   const [modalState, setModalState] = useRecoilState(authModalState);
   return (
     <>

@@ -10,19 +10,24 @@ import {
   Button,
   Link,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import Login from "./Login";
 import Signup from "./Signup";
 import { auth } from "../firebase/firebase";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { AuthContext } from "./AuthContext";
 
-function SignUpModal() {
+function SignUpModal({ dispatch }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+  const [user, loading, error] = useAuthState(auth);
+  const { userStatus } = useContext(AuthContext);
+
+  useEffect(() => {
+    if (userStatus === true) {
+      onClose();
+    }
+  }, [userStatus]);
   //   const [modalState, setModalState] = useRecoilState(authModalState);
   return (
     <>
@@ -39,9 +44,6 @@ function SignUpModal() {
           <ModalFooter>
             <Button colorScheme="blue" mr={250} onClick={onClose}>
               Close
-            </Button>
-            <Button colorScheme="purple" mr={3} onClick={onClose}>
-              Submit
             </Button>
           </ModalFooter>
         </ModalContent>

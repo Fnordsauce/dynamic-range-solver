@@ -2,15 +2,24 @@ import React, { useContext } from "react";
 import { FrameContext } from "./FrameContext";
 import AuthModal from "./auth/AuthModal";
 import SignUpModal from "./auth/SignUpModal";
+import { AuthContext } from "./auth/AuthContext";
+import { signOut } from "@firebase/auth";
+import { auth } from "./firebase/firebase";
+import { Button } from "@chakra-ui/react";
 
-export function TopNav() {
+export function TopNav({ dispatch }) {
   const { setUndone, setReset } = useContext(FrameContext);
+  const { user } = useContext(AuthContext);
+  const logout = () => {
+    signOut(auth);
+  };
   return (
     <div className="top-bar">
       <div className="saved-copies">
         {/* <Setting2 className="svgexport" /> */}
-        <div className="text-wrapper-5">Settings</div>
+        <div className="text-wrapper-5">{user ? user.email : "Settings"}</div>
       </div>
+
       <div className="frame-3">
         <div className="saved-copies" onClick={() => setUndone(true)}>
           <img
@@ -39,17 +48,30 @@ export function TopNav() {
       </div>
       <div className="frame-4">
         <div className="frame-5">
-          <div className="frame-6">
-            <img
-              className="icon-tick-circle"
-              alt="Icon tick circle"
-              src="img\icon-tick-circle.svg"
-            />
-            <div className="text-wrapper-6">Save</div>
-          </div>
+          {user ? (
+            <div className="frame-6">
+              <img
+                className="icon-tick-circle"
+                alt="Icon tick circle"
+                src="img\icon-tick-circle.svg"
+              />
+              <div className="text-wrapper-6">Save</div>
+            </div>
+          ) : (
+            ""
+          )}
+
           <img className="line" alt="Line" src="img/line-1.svg" />
-          <AuthModal />
-          <SignUpModal />
+          {user ? "" : <AuthModal dispatch={dispatch} />}
+          {user ? "" : <SignUpModal dispatch={dispatch} />}
+          {!user ? (
+            ""
+          ) : (
+            <div className="saved-copies">
+              {/* <Setting2 className="svgexport" /> */}
+              <Button onClick={logout}> Logout</Button>
+            </div>
+          )}
         </div>
         <div className="avatar-5">
           {/* <div className="text-44">OR</div> */}

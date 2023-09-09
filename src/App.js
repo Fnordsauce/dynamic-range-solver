@@ -6,6 +6,8 @@ import { FrameProvider } from "./FrameContext";
 import "./style.css";
 import React, { useReducer } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
+import { AuthProvider } from "./auth/AuthContext";
+import { RecentChartsDiv } from "./RecentChartsDiv";
 
 const intialState = {
   status: "notReady",
@@ -22,10 +24,13 @@ export default function App() {
       {window.addEventListener("contextmenu", (e) => e.preventDefault())}
       <ChakraProvider>
         <FrameProvider>
-          <ChartBuilder dispatch={dispatch} oncontextmenu="return false;" />
-          <SideNav />
-          <TopNav />
-          <ColourSelector />
+          <AuthProvider>
+            <ChartBuilder dispatch={dispatch} oncontextmenu="return false;" />
+            <SideNav dispatch={dispatch} />
+            <TopNav />
+            <RecentChartsDiv dispatch={dispatch} />
+            <ColourSelector />
+          </AuthProvider>
         </FrameProvider>
       </ChakraProvider>
     </div>

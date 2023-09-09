@@ -28,7 +28,7 @@ export function SideNav() {
                 {/* <div className="grid-four-01-wrapper">
           <GridFour01 className="grid-four" color="#7D8DA7" />
         </div> */}
-                <div className="text-43">Revenue</div>
+                {/* <div className="text-43">Revenue</div>
               </div>
             </div>
             <div className="list-manu">
