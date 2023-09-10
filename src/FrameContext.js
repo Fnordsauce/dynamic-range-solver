@@ -10,8 +10,20 @@ function FrameProvider({ children }) {
   // Undo State functionaility
   const [undone, setUndone] = useState(true);
 
+  const [chartDisplay, setChartDisplay] = useState(2);
+
+  const [chartData, setChartData] = useState([]);
+
   //RESET State :
   const [reset, setReset] = useState(false);
+  let zeroArray = [];
+  for (let i = 0; i < 13; i++) {
+    let row = [];
+    for (let j = 0; j < 13; j++) {
+      row.push(0);
+    }
+    zeroArray.push(row);
+  }
 
   // This function adds the rank fo the hand click to the handHistory
   function handUndo({ rank }) {
@@ -23,6 +35,11 @@ function FrameProvider({ children }) {
   return (
     <FrameContext.Provider
       value={{
+        chartData,
+        setChartData,
+        chartDisplay,
+        setChartDisplay,
+        zeroArray,
         ranked,
         setRanked,
         handUndo,

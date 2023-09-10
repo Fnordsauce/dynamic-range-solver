@@ -1085,12 +1085,32 @@
   width: 111px;
 }
 
+/* Default styles */
 .main .group-2 {
-  height: 46px;
+  height: 55px;
   left: 20px;
   position: absolute;
   top: 64px;
   width: 180px;
+  border-radius: 10px; /* Add rounded corners */
+  background-color: #445577; /* Set the default background color to dark blue */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s; /* Add a transition for smooth animation */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect */
+.main .group-2:hover {
+  background-color: #334455; /* Change the background color to a darker blue on hover */
+}
+
+/* Onclick animation */
+.main .group-2:active {
+  transform: scale(0.9); /* Scale down the element when clicked */
 }
 
 .main .text-wrapper-3 {

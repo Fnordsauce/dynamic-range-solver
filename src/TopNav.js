@@ -6,13 +6,18 @@ import { AuthContext } from "./auth/AuthContext";
 import { signOut } from "@firebase/auth";
 import { auth } from "./firebase/firebase";
 import { Button } from "@chakra-ui/react";
+import SaveFunction from "./firestore/SaveFunction";
 
 export function TopNav({ dispatch }) {
-  const { setUndone, setReset } = useContext(FrameContext);
+  const { setUndone, setReset, zeroArray } = useContext(FrameContext);
   const { user } = useContext(AuthContext);
   const logout = () => {
     signOut(auth);
   };
+  function handleSave() {
+    SaveFunction();
+    window.location.reload(); // Reload the page after saving
+  }
   return (
     <div className="top-bar">
       <div className="saved-copies">
@@ -55,7 +60,7 @@ export function TopNav({ dispatch }) {
                 alt="Icon tick circle"
                 src="img\icon-tick-circle.svg"
               />
-              <div className="text-wrapper-6">Save</div>
+              <SaveFunction zeroArray={zeroArray} />
             </div>
           ) : (
             ""
