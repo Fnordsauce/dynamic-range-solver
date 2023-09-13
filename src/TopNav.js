@@ -9,7 +9,8 @@ import { Button } from "@chakra-ui/react";
 import SaveFunction from "./firestore/SaveFunction";
 
 export function TopNav({ dispatch }) {
-  const { setUndone, setReset, zeroArray } = useContext(FrameContext);
+  const { setUndone, setReset, zeroArray, setChartDisplay } =
+    useContext(FrameContext);
   const { user } = useContext(AuthContext);
   const logout = () => {
     signOut(auth);
@@ -17,12 +18,14 @@ export function TopNav({ dispatch }) {
   function handleSave() {
     SaveFunction();
     window.location.reload(); // Reload the page after saving
+
+    setChartDisplay((prevDisplay) => (prevDisplay === 6 ? 1 : prevDisplay + 1));
   }
   return (
     <div className="top-bar">
       <div className="saved-copies">
         {/* <Setting2 className="svgexport" /> */}
-        <div className="text-wrapper-5">{user ? user.email : "Settings"}</div>
+        <div className="text-42">{user ? user.email : "Settings"}</div>
       </div>
 
       <div className="frame-3">
@@ -60,7 +63,7 @@ export function TopNav({ dispatch }) {
                 alt="Icon tick circle"
                 src="img\icon-tick-circle.svg"
               />
-              <SaveFunction zeroArray={zeroArray} />
+              <SaveFunction zeroArray={zeroArray} dispatch={dispatch} />
             </div>
           ) : (
             ""

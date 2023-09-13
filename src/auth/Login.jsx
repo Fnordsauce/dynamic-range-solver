@@ -25,6 +25,13 @@ function Login() {
     signInWithEmailAndPassword(email, password);
   }
 
+  function handleKeyDown(e) {
+    // Check if the Enter key was pressed (key code 13)
+    if (e.key === "Enter") {
+      handleSubmit(e);
+    }
+  }
+
   return (
     <div>
       <Box display="flex" flexDirection="column" alignItems="center" mb={4}>
@@ -33,8 +40,7 @@ function Login() {
           style={{ textAlign: "center", fontSize: "24px", fontWeight: "bold" }}
         >
           Log In
-        </h1>{" "}
-        {/* Add the title */}
+        </h1>
       </Box>
       <FormControl mb={4} pl={4} pr={4}>
         <FormLabel textAlign="center">Email address:</FormLabel>
@@ -43,6 +49,7 @@ function Login() {
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          onKeyDown={handleKeyDown}
         />
       </FormControl>
       <FormControl mb={4} pl={4} pr={4}>
@@ -52,9 +59,15 @@ function Login() {
           id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          onKeyDown={handleKeyDown}
         />
       </FormControl>
-      {/* Add the signup link */}
+      {/* Display error message if there is an error */}
+      {error && (
+        <Box color="red" textAlign="center" mb={4}>
+          {error.message}
+        </Box>
+      )}
       <Box display="flex" justifyContent="center" alignItems="center">
         <Link to="/Signup">Need an Account? Sign Up</Link>
       </Box>

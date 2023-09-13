@@ -31,9 +31,6 @@ export function Combo({ children, rank, isDown, setIsDown, pos }) {
 
       const firstVar2 = firstVar - 1;
       const secondVar2 = secondVar - 1;
-      console.log(firstVar2, secondVar2);
-      const historicalChartData = chartData;
-      console.log("chartdata", chartData);
       if (chartData.length >= 12) {
         if (chartData[firstVar2][secondVar2] === 1)
           setHighlight("text-wrapper");
@@ -106,8 +103,6 @@ export function Combo({ children, rank, isDown, setIsDown, pos }) {
     handUndo({ rank, highlight });
     if (highlight === "box-4") setHighlight("text-wrapper");
     if (highlight === "text-wrapper") setHighlight("box-4");
-
-    console.log({ children }); // Very Useful for contextual confidence
   }
 
   return (

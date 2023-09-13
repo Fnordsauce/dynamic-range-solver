@@ -17,6 +17,7 @@ export function RecentChartsDiv({ dispatch }) {
   const [loading, setLoading] = useState(true); // Track whether data is loading
 
   const data = QueryFunction();
+  let groupName;
 
   useEffect(
     function () {
@@ -26,22 +27,28 @@ export function RecentChartsDiv({ dispatch }) {
 
         // Loop through each item in the result array
         for (const item of result) {
-          const inputObject = item;
-          // Parse the JSON string into a JavaScript object
-          const jsonObject = JSON.parse(inputObject);
+          // Extract the ID from the data object
+          const id = item.id;
 
-          // Get the keys (row names) and sort them based on row numbers
-          const sortedKeys = Object.keys(jsonObject.nestedArrayObject).sort(
-            (a, b) => parseInt(a.slice(3)) - parseInt(b.slice(3))
-          );
+          // Access the nestedArrayObject
+          const nestedArrayObject = item.data.nestedArrayObject;
 
-          // Create a new array with the rows in the correct order
-          const orderedRows = sortedKeys.map(
-            (key) => jsonObject.nestedArrayObject[key]
-          );
+          // Convert the nestedArrayObject into an array of rows
+          const rowsArray = [];
+          for (let i = 1; i <= 13; i++) {
+            const rowKey = "row" + i;
+            const row = nestedArrayObject[rowKey];
+            rowsArray.push(row);
+          }
 
-          // Add the orderedRows to the temporary array
-          tempFormattedDataArray.push(orderedRows);
+          // Create an object with the ID as the key and the array of rows as the value
+          const formattedItem = {
+            id: id,
+            data: rowsArray,
+          };
+
+          // Push the formatted item into the array
+          tempFormattedDataArray.push(formattedItem);
         }
 
         // Update the state with the formatted data and mark loading as false
@@ -52,12 +59,23 @@ export function RecentChartsDiv({ dispatch }) {
     [data]
   );
 
+  // Function to update chartDisplay safely
+  // const updateChartDisplay = () => {
+  //   setChartDisplay((prevDisplay) => (prevDisplay === 6 ? 1 : prevDisplay + 1));
+  // };
   return (
     <div className="overlap-wrapper">
       <div className="overlap">
         <div className="overlap-group-wrapper">
           <div className="overlap-group">
-            <div className="text-wrapper-2">Recent charts</div>
+            {user ? (
+              <div className="text-wrapper-2">Recent charts</div>
+            ) : (
+              <div className="text-wrapper-2">
+                Please Log In to <br></br> View Recent Charts
+              </div>
+            )}
+
             {loading ? (
               // Render the loader while data is loading
               <Loader />
@@ -65,12 +83,17 @@ export function RecentChartsDiv({ dispatch }) {
               // Render the charts when data is available and user is logged in
               <>
                 {formattedDataArray.map((data, index) => (
-                  <RecentChart key={index} data={data} dispatch={dispatch} />
+                  <RecentChart
+                    key={index}
+                    index={index}
+                    data={data}
+                    dispatch={dispatch}
+                  />
                 ))}
               </>
             ) : (
               // Render a message if the user is not logged in
-              "Please Log In to View Recent Charts"
+              <></>
             )}
           </div>
         </div>

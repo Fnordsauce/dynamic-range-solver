@@ -5,7 +5,16 @@
   flex-direction: row;
   justify-content: flex;
   width: 100%;
+  height: 100vh; /* This will make the background cover the entire viewport height. */
 }
+.borders {
+  cursor: crosshair;
+}
+
+.borders * {
+  cursor: crosshair;
+}
+
 .disabled {
   user-select: none;
   -webkit-user-select: none; /*Safari*/
@@ -31,14 +40,13 @@
 .main .frame {
   align-items: flex-start;
   background-color: #0b111d;
-  border: 0.87px solid;
-  border-color: #2a2a2e;
-  border-radius: 6.93px;
+  border: 4px solid #999; /* Increase the border width and set it to white */
+  border-radius: 12px; /* Increase the border radius for a larger border */
   display: flex;
   gap: 3.46px;
   left: 305px;
   overflow: hidden;
-  padding: 14.97px;
+  padding: 20px; /* Adjust the padding as needed */
   position: absolute;
   top: 111px;
   width: fit-content;
@@ -870,6 +878,7 @@
 
 .main .group {
   background-color: #0b111d;
+
   height: 20px;
   left: 306px;
   position: absolute;
@@ -906,7 +915,8 @@
 .main .menu {
   align-items: flex-start;
   background-color: #0b111d;
-  border-color: var(--gray-shadesdark-shade);
+  border: 1px solid #999; /* Increase the border width and set it to white */
+  border-radius: 12px; /* Increase the border radius for a larger border */
   border-right-style: solid;
   border-right-width: 1px;
   display: flex;
@@ -1091,7 +1101,7 @@
   left: 20px;
   position: absolute;
   top: 64px;
-  width: 180px;
+  width: 250px;
   border-radius: 10px; /* Add rounded corners */
   background-color: #445577; /* Set the default background color to dark blue */
   color: white; /* Set text color to white */
@@ -1112,6 +1122,87 @@
 .main .group-2:active {
   transform: scale(0.9); /* Scale down the element when clicked */
 }
+/* Default styles */
+.main .group-3 {
+  height: 55px;
+  left: 20px;
+  position: absolute;
+  top: 64px;
+  width: 180px;
+  border-radius: 10px; /* Add rounded corners */
+  background-color: #445577; /* Set the default background color to dark blue */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s; /* Add a transition for smooth animation */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect */
+.main .group-3:hover {
+  background-color: #334455; /* Change the background color to a darker blue on hover */
+}
+
+/* Onclick animation */
+.main .group-3:active {
+  transform: scale(0.9); /* Scale down the element when clicked */
+}
+/* Default styles */
+.main .group-4 {
+  height: 55px;
+  left: 20px;
+  position: absolute;
+  top: 64px;
+  width: 180px;
+  border-radius: 10px; /* Add rounded corners */
+  background-color: #445577; /* Set the default background color to dark blue */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s; /* Add a transition for smooth animation */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect */
+.main .group-4:hover {
+  background-color: #334455; /* Change the background color to a darker blue on hover */
+}
+
+/* Onclick animation */
+.main .group-4:active {
+  transform: scale(0.9); /* Scale down the element when clicked */
+}
+/* Default styles */
+.main .group-5 {
+  height: 55px;
+  left: 20px;
+  position: absolute;
+  top: 64px;
+  width: 180px;
+  border-radius: 10px; /* Add rounded corners */
+  background-color: #445577; /* Set the default background color to dark blue */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s; /* Add a transition for smooth animation */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect */
+.main .group-5:hover {
+  background-color: #334455; /* Change the background color to a darker blue on hover */
+}
+
+/* Onclick animation */
+.main .group-5:active {
+  transform: scale(0.9); /* Scale down the element when clicked */
+}
 
 .main .text-wrapper-3 {
   color: #eeeeeeee;
@@ -1123,6 +1214,19 @@
   line-height: 20px;
   position: absolute;
   top: 8px;
+  white-space: nowrap;
+  width: 111px;
+}
+.main .text-wrapper-log {
+  color: #eeeeeeee;
+  font-family: "GothamRounded-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  left: 5px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 100px;
   white-space: nowrap;
   width: 111px;
 }
@@ -1155,7 +1259,7 @@
   left: 20px;
   position: absolute;
   top: 134px;
-  width: 180px;
+  width: 250px;
 }
 
 .main .group-4 {
@@ -1163,7 +1267,7 @@
   left: 20px;
   position: absolute;
   top: 204px;
-  width: 180px;
+  width: 250px;
 }
 
 .main .group-5 {
@@ -1171,7 +1275,7 @@
   left: 20px;
   position: absolute;
   top: 274px;
-  width: 180px;
+  width: 250px;
 }
 
 .main .group-6 {
@@ -1179,12 +1283,18 @@
   left: 20px;
   position: absolute;
   top: 344px;
-  width: 180px;
+  width: 250px;
+}
+.main .side-bar {
+  border: 1px solid #ffffff; /* Increase the border width and set it to white */
+  border-radius: 12px; /* Increase the border radius for a larger border */
 }
 
 .main .top-bar {
   align-items: center;
   background-color: #0b111d;
+  border: 1px solid #999; /* Increase the border width and set it to white */
+  border-radius: 12px; /* Increase the border radius for a larger border */
   display: flex;
   justify-content: space-between;
   left: 266px;
@@ -1377,7 +1487,7 @@
 
 .main .group-8 {
   height: 108px;
-  left: 1128px;
+  left: 1200px;
   position: absolute;
   top: 568px;
   width: 104px;

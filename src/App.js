@@ -8,7 +8,14 @@ import React, { useReducer } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import { AuthProvider } from "./auth/AuthContext";
 import { RecentChartsDiv } from "./RecentChartsDiv";
+import Popup from "./Popup";
 
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  integrity="sha384-o5m5B5f5ZLeA9M3L51Rc5P4I6FfX8eRknf5W8z+E5l5u9zQ8zQ2z5xCf5B5E5J5b5"
+  crossorigin="anonymous"
+/>;
 const intialState = {
   status: "notReady",
 };

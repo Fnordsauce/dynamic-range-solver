@@ -42,7 +42,7 @@ function SignUpModal({ dispatch }) {
           <Signup />
 
           <ModalFooter>
-            <Button colorScheme="blue" mr={250} onClick={onClose}>
+            <Button colorScheme="blue" mr={2} onClick={onClose}>
               Close
             </Button>
           </ModalFooter>
