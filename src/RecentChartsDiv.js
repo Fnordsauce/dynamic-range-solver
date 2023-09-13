@@ -32,6 +32,7 @@ export function RecentChartsDiv({ dispatch }) {
 
           // Access the nestedArrayObject
           const nestedArrayObject = item.data.nestedArrayObject;
+          const timestamped = item.data.timestamp;
 
           // Convert the nestedArrayObject into an array of rows
           const rowsArray = [];
@@ -40,9 +41,15 @@ export function RecentChartsDiv({ dispatch }) {
             const row = nestedArrayObject[rowKey];
             rowsArray.push(row);
           }
-
+          const timestampedtwo = timestamped?.toDate().toLocaleString("en-US", {
+            month: "short",
+            day: "numeric",
+            hour: "numeric",
+            minute: "numeric",
+          });
           // Create an object with the ID as the key and the array of rows as the value
           const formattedItem = {
+            timestamp: timestampedtwo,
             id: id,
             data: rowsArray,
           };

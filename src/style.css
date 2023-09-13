@@ -92,7 +92,7 @@
 }
 
 .main .text {
-  color: darkgrey;
+  color: whitesmoke;
   font-family: "GothamRounded-Medium";
   font-size: 20.8px;
   font-weight: 500;
@@ -107,7 +107,7 @@
   width: fit-content;
 }
 
-.main .text-wrapper {
+.main .purple-div {
   align-items: center;
   background-color: #61489a;
   border-radius: 3.46px;
@@ -155,7 +155,7 @@
   width: fit-content;
 }
 
-.main .div-wrapper {
+.main .orange-div {
   align-items: center;
   background-color: #e88e19;
   border-radius: 3.46px;
@@ -186,7 +186,7 @@
   width: fit-content;
 }
 
-.main .box-2 {
+.main .pink-div {
   align-items: center;
   background-color: #9b5379;
   border-radius: 3.46px;
@@ -315,7 +315,7 @@
   width: fit-content;
 }
 
-.main .box-4 {
+.main .default-div {
   align-items: center;
   background-color: var(--gray-800);
   border-radius: 3.46px;
@@ -1375,7 +1375,7 @@
 
 .main .frame-6 {
   align-items: center;
-  background-color: var(--blueprimary);
+  background-color: --blueprimary;
   border-radius: 6px;
   display: flex;
   gap: 8px;

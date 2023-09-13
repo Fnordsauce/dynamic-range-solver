@@ -1,4 +1,4 @@
-import { doc, setDoc, Timestamp } from "firebase/firestore";
+import { doc, serverTimestamp, setDoc, Timestamp } from "firebase/firestore";
 import { db } from "../firebase/firebase";
 import { useContext } from "react";
 import { FrameContext } from "../FrameContext";
@@ -26,6 +26,7 @@ function SaveFunction({ zeroArray }) {
     const userID = user.uid;
 
     await setDoc(doc(db, "ChartDB", Uinput), {
+      timestamp: serverTimestamp(),
       nestedArrayObject,
       userID,
     });

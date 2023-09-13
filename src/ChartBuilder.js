@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Combo } from "./Combo";
 import { FrameContext } from "./FrameContext";
 import CircularCursor from "./CircularCursor";
+import { ColourContext } from "./ColourShifter/ColourContext";
 
 export function ChartBuilder({ rank, id, dispatch }) {
   return (

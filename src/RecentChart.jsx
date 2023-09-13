@@ -17,15 +17,15 @@ function RecentChart({ data, dispatch, group, index }) {
   async function handleDeleteClick(event) {
     event.stopPropagation(); // Prevent the click event from propagating
 
-    console.log("Chart DELETED ");
     await deleteDoc(doc(db, "ChartDB", `${data.id}`));
   }
+  const setTime = String(data.timestamp);
 
   return (
     <>
       <div className={GroupName1} onClick={handleClick}>
         <div className="text-wrapper-3">{data.id}</div>
-        <div className="text-wrapper-4">Today, 10am</div>
+        <div className="text-wrapper-4">{setTime}</div>
         <img className="rectangle" alt="Rectangle" src="img\sampleChart.png" />
         <Button
           colorScheme="red" // You can choose any color scheme you like

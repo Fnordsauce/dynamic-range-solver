@@ -25,7 +25,6 @@ async function QueryFunction() {
   try {
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
-      // Access the document name (id) and data
       const docData = {
         id: doc.id,
         data: doc.data(),

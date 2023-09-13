@@ -7,7 +7,7 @@ import {
   Input,
   Link,
 } from "@chakra-ui/react";
-import { useState, useEffect, useRef } from "react"; // Import useEffect and useRef
+import { useState, useEffect, useRef } from "react";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "../firebase/firebase";
 
@@ -16,24 +16,41 @@ function Login() {
   const [password, setPassword] = useState("");
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
-  const emailInputRef = useRef(null); // Create a ref for the email input
+  const emailInputRef = useRef(null);
+  const passwordInputRef = useRef(null); // Create a ref for the password input
 
   useEffect(() => {
-    // Use useEffect to focus on the email input when the component mounts
     emailInputRef.current.focus();
   }, []);
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (!email || !password) return;
+    if (!email) {
+      // If the email input is empty, focus on it and return
+      emailInputRef.current.focus();
+      return;
+    }
+
+    if (!password) {
+      // If the password input is empty, focus on it and return
+      passwordInputRef.current.focus();
+      return;
+    }
 
     signInWithEmailAndPassword(email, password);
   }
 
-  function handleKeyDown(e) {
-    // Check if the Enter key was pressed (key code 13)
+  function handleEmailKeyDown(e) {
     if (e.key === "Enter") {
+      // When Enter is pressed in the email input, focus on the password input
+      passwordInputRef.current.focus();
+    }
+  }
+
+  function handlePasswordKeyDown(e) {
+    if (e.key === "Enter") {
+      // When Enter is pressed in the password input, submit the form
       handleSubmit(e);
     }
   }
@@ -55,9 +72,9 @@ function Login() {
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          onKeyDown={handleKeyDown}
-          ref={emailInputRef} // Set the ref here
-          autoFocus // Add the autoFocus attribute
+          onKeyDown={handleEmailKeyDown}
+          ref={emailInputRef}
+          autoFocus
         />
       </FormControl>
       <FormControl mb={4} pl={4} pr={4}>
@@ -67,10 +84,10 @@ function Login() {
           id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          onKeyDown={handleKeyDown}
+          onKeyDown={handlePasswordKeyDown}
+          ref={passwordInputRef} // Set the ref here
         />
       </FormControl>
-      {/* Display error message if there is an error */}
       {error && (
         <Box color="red" textAlign="center" mb={4}>
           {error.message}

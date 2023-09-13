@@ -1,5 +1,5 @@
 import { ChartBuilder, Combo } from "./ChartBuilder";
-import { ColourSelector } from "./ColourSelector.1";
+import { ColourSelector } from "./ColourShifter/ColourSelector.1";
 import { SideNav } from "./SideNav";
 import { TopNav } from "./TopNav";
 import { FrameProvider } from "./FrameContext";
@@ -9,6 +9,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { AuthProvider } from "./auth/AuthContext";
 import { RecentChartsDiv } from "./RecentChartsDiv";
 import Popup from "./Popup";
+import { ColourProvider } from "./ColourShifter/ColourContext";
 
 <link
   rel="stylesheet"
@@ -31,13 +32,15 @@ export default function App() {
       {window.addEventListener("contextmenu", (e) => e.preventDefault())}
       <ChakraProvider>
         <FrameProvider>
-          <AuthProvider>
-            <ChartBuilder dispatch={dispatch} oncontextmenu="return false;" />
-            <SideNav dispatch={dispatch} />
-            <TopNav />
-            <RecentChartsDiv dispatch={dispatch} />
-            <ColourSelector />
-          </AuthProvider>
+          <ColourProvider>
+            <AuthProvider>
+              <ChartBuilder dispatch={dispatch} oncontextmenu="return false;" />
+              <SideNav dispatch={dispatch} />
+              <TopNav />
+              <RecentChartsDiv dispatch={dispatch} />
+              <ColourSelector />
+            </AuthProvider>
+          </ColourProvider>
         </FrameProvider>
       </ChakraProvider>
     </div>
