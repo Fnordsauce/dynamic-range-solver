@@ -7,7 +7,7 @@ import {
   Input,
   Link,
 } from "@chakra-ui/react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react"; // Import useEffect and useRef
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "../firebase/firebase";
 
@@ -16,6 +16,12 @@ function Login() {
   const [password, setPassword] = useState("");
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+  const emailInputRef = useRef(null); // Create a ref for the email input
+
+  useEffect(() => {
+    // Use useEffect to focus on the email input when the component mounts
+    emailInputRef.current.focus();
+  }, []);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -50,6 +56,8 @@ function Login() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           onKeyDown={handleKeyDown}
+          ref={emailInputRef} // Set the ref here
+          autoFocus // Add the autoFocus attribute
         />
       </FormControl>
       <FormControl mb={4} pl={4} pr={4}>

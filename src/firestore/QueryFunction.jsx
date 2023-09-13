@@ -20,17 +20,28 @@ async function QueryFunction() {
   let data = [];
 
   // Create a query that filters documents where the "chart" field equals the user's UID
-  const q = query(collection(db, "ChartDB"), where("userData", "==", userUid));
+  const q = query(collection(db, "ChartDB"), where("userID", "==", userUid));
 
-  const querySnapshot = await getDocs(q);
-  querySnapshot.forEach((doc) => {
-    // Access the document name (id) and data
-    const docData = {
-      id: doc.id,
-      data: doc.data(),
-    };
-    data.push(docData);
-  });
+  try {
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => {
+      // Access the document name (id) and data
+      const docData = {
+        id: doc.id,
+        data: doc.data(),
+      };
+      data.push(docData);
+    });
+  } catch (error) {
+    // Handle the Firebase error here
+    // You can display a popup modal or log the error for debugging
+    console.error("Firebase Error:", error);
+
+    // Display a popup modal (you can replace this with your modal logic)
+    // Example using window.alert:
+    window.alert("Firebase Error: Missing or insufficient permissions");
+  }
+
   return data;
 }
 
