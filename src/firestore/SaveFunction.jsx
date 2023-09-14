@@ -33,8 +33,13 @@ function SaveFunction({ zeroArray }) {
   }
 
   return (
-    <div className="text-wrapper-6" onClick={uploadArray}>
-      Save
+    <div className="frame-6" onClick={uploadArray}>
+      <img
+        className="icon-tick-circle"
+        alt="Icon tick circle"
+        src="img\icon-tick-circle.svg"
+      />
+      <div className="text-wrapper-6">Save Chart</div>
     </div>
   );
 }

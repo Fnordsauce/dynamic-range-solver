@@ -31,7 +31,7 @@ function RecentChart({ data, dispatch, group, index }) {
           colorScheme="red" // You can choose any color scheme you like
           size="sm" // Adjust the size as needed (sm for small, md for medium, lg for large)
           onClick={handleDeleteClick}
-          style={{ marginLeft: "150px" }} // Adjust the margins as needed
+          style={{ marginLeft: "175px" }} // Adjust the margins as needed
         >
           X
         </Button>

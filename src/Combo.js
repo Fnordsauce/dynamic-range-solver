@@ -50,7 +50,12 @@ export function Combo({ children, rank, isDown, setIsDown, pos }) {
   // No effect
   useEffect(
     function () {
-      if (ranked <= rank) setHighlight("purple-div");
+      if (ranked <= rank)
+        if (highlight !== "default-div") {
+          return;
+        }
+      setHighlight(currentColour);
+
       if (ranked > rank) setHighlight("default-div");
     },
     [ranked, rank]
@@ -109,15 +114,26 @@ export function Combo({ children, rank, isDown, setIsDown, pos }) {
       if (currentColour === "default-div") setHighlight("default-div");
       if (currentColour === "pink-div") setHighlight("pink-div");
       if (currentColour === "orange-div") setHighlight("orange-div");
+      if ((currentColour === "orange-div") & (highlight === "orange-div"))
+        setHighlight("default-div");
+      if ((currentColour === "pink-div") & (highlight === "pink-div"))
+        setHighlight("default-div");
+      if ((currentColour === "purple-div") & (highlight === "purple-div"))
+        setHighlight("default-div");
     }
   }
   // Global context may be Needed
   function markHighlight() {
     handUndo({ rank, highlight });
     if (currentColour === "purple-div") setHighlight("purple-div");
-    if (currentColour === "default-div") setHighlight("default-div");
     if (currentColour === "pink-div") setHighlight("pink-div");
     if (currentColour === "orange-div") setHighlight("orange-div");
+    if ((currentColour === "orange-div") & (highlight === "orange-div"))
+      setHighlight("default-div");
+    if ((currentColour === "pink-div") & (highlight === "pink-div"))
+      setHighlight("default-div");
+    if ((currentColour === "purple-div") & (highlight === "purple-div"))
+      setHighlight("default-div");
   }
 
   return (

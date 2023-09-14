@@ -17,34 +17,47 @@ export function SideNav() {
           <div className="list-item">
             <div className="list-manu">
               <div className="content">
-                {/* <div className="grid-four-wrapper">
-          { <GridFour01 className="grid-four" color="white" /> }
-        </div> */}
-                <div className="text-42">Dashboard</div>
+                <div className="avatar-2">
+                  <div className="avatar grid-four">
+                    <img src="..\img\gridfour.png"></img>
+                  </div>
+                </div>
+                <div
+                  className="text"
+                  style={{ marginLeft: "20px", marginBottom: "-25px" }}
+                >
+                  Dashboard
+                </div>
               </div>
             </div>
             <div className="list-manu">
               <div className="content">
-                {/* <div className="grid-four-01-wrapper">
-          <GridFour01 className="grid-four" color="#7D8DA7" />
-        </div> */}
-                {/* <div className="text-43">Revenue</div>
+                <div className="avatar-2">
+                  <div className="avatar grid-four">
+                    <img src="..\img\gridfour.png"></img>
+                  </div>
+                </div>
+                <div
+                  className="text"
+                  style={{ marginLeft: "20px", marginBottom: "-25px" }}
+                >
+                  Notifications{" "}
+                </div>
               </div>
             </div>
             <div className="list-manu">
               <div className="content">
-                {/* <div className="style-solid-wrapper">
-          { <GridFour01 className="grid-four" color="#7D8DA7" /> }
-        </div> */}
-                <div className="text-43">Notifications</div>
-              </div>
-            </div>
-            <div className="list-manu">
-              <div className="content">
-                {/* <div className="avatar-2">
-          { <GridFour01 className="grid-four" color="#7D8DA7" /> }
-        </div> */}
-                <div className="text-43">Analytics</div>
+                <div className="avatar-2">
+                  <div className="avatar grid-four">
+                    <img src="..\img\gridfour.png"></img>
+                  </div>
+                </div>
+                <div
+                  className="text"
+                  style={{ marginLeft: "20px", marginBottom: "-25px" }}
+                >
+                  Analytics
+                </div>
               </div>
             </div>
             <div className="list-manu">

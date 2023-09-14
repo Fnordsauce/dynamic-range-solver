@@ -914,7 +914,7 @@
 
 .main .menu {
   align-items: flex-start;
-  background-color: #0b111d;
+  background-color: var(--gray-shadesdark-shade);
   border: 1px solid #999; /* Increase the border width and set it to white */
   border-radius: 12px; /* Increase the border radius for a larger border */
   border-right-style: solid;
@@ -1013,6 +1013,13 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+}
+.list-manu .grid-four {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 8px;
+  left: 8px;
 }
 
 .main .grid-four-01-wrapper {
@@ -1128,7 +1135,7 @@
   left: 20px;
   position: absolute;
   top: 64px;
-  width: 180px;
+  width: 250px;
   border-radius: 10px; /* Add rounded corners */
   background-color: #445577; /* Set the default background color to dark blue */
   color: white; /* Set text color to white */
@@ -1255,7 +1262,7 @@
 }
 
 .main .group-3 {
-  height: 46px;
+  height: 55px;
   left: 20px;
   position: absolute;
   top: 134px;
@@ -1263,7 +1270,7 @@
 }
 
 .main .group-4 {
-  height: 46px;
+  height: 55;
   left: 20px;
   position: absolute;
   top: 204px;
@@ -1271,7 +1278,7 @@
 }
 
 .main .group-5 {
-  height: 46px;
+  height: 55;
   left: 20px;
   position: absolute;
   top: 274px;
@@ -1279,11 +1286,20 @@
 }
 
 .main .group-6 {
-  height: 46px;
+  height: 55px;
   left: 20px;
   position: absolute;
-  top: 344px;
+  top: 350px;
   width: 250px;
+  border-radius: 10px; /* Add rounded corners */
+  background-color: #445577; /* Set the default background color to dark blue */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s; /* Add a transition for smooth animation */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 .main .side-bar {
   border: 1px solid #ffffff; /* Increase the border width and set it to white */
@@ -1292,7 +1308,7 @@
 
 .main .top-bar {
   align-items: center;
-  background-color: #0b111d;
+  background-color: var(--gray-shadesdark-shade);
   border: 1px solid #999; /* Increase the border width and set it to white */
   border-radius: 12px; /* Increase the border radius for a larger border */
   display: flex;
@@ -1375,14 +1391,13 @@
 
 .main .frame-6 {
   align-items: center;
-  background-color: --blueprimary;
+  background-color: dodgerblue;
   border-radius: 6px;
-  display: flex;
+  display: inline-flex;
   gap: 8px;
   justify-content: center;
   padding: 8px 10px;
   position: relative;
-  width: fit-content;
 }
 
 .main .icon-tick-circle {
@@ -1442,7 +1457,19 @@
   top: 920px;
   width: 400px;
 }
-
+.main .saved-copies-1 {
+  align-items: center;
+  background-color: #9b5379;
+  border-radius: 6px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  left: -135px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  width: fit-content;
+}
 .main .saved-copies-2 {
   align-items: center;
   background-color: #61489a;
@@ -1504,17 +1531,38 @@
   top: -2px;
   width: 48px;
 }
+.main .box-8-active {
+  background-color: #e88e19;
+
+  border-radius: 3.46px;
+  height: 48px;
+  left: -2px;
+  position: absolute;
+  top: -2px;
+  width: 48px;
+  box-shadow: 0 0 5px 5px white;
+}
 
 .main .box-9 {
   background-color: #61489a;
   border: 2px solid;
-  border-color: #2a2a2e;
   border-radius: 3.46px;
   height: 48px;
   left: 58px;
   position: absolute;
   top: -2px;
   width: 48px;
+}
+.main .box-9-active {
+  background-color: #61489a;
+  border-radius: 3.46px;
+
+  height: 48px;
+  left: 58px;
+  position: absolute;
+  top: -2px;
+  width: 48px;
+  box-shadow: 0 0 5px 5px white;
 }
 
 .main .box-10 {
@@ -1528,6 +1576,17 @@
   top: 62px;
   width: 48px;
 }
+.main .box-10-active {
+  background-color: #9b5379;
+
+  border-radius: 3.46px;
+  height: 48px;
+  left: -2px;
+  position: absolute;
+  top: 62px;
+  width: 48px;
+  box-shadow: 0 0 5px 5px white;
+}
 
 .main .box-11 {
   background-color: #43ae4d;
@@ -1539,4 +1598,15 @@
   position: absolute;
   top: 62px;
   width: 48px;
+}
+.main .box-11-active {
+  background-color: #43ae4d;
+
+  border-radius: 3.46px;
+  height: 48px;
+  left: 58px;
+  position: absolute;
+  top: 62px;
+  width: 48px;
+  box-shadow: 0 0 5px 5px white;
 }

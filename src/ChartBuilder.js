@@ -25,10 +25,10 @@ export function StandardComboFrame() {
           <Combo isDown={isDown} setIsDown={setIsDown} rank="1" pos="1,1">
             AA
           </Combo>
-          <Combo isDown={isDown} setIsDown={setIsDown} rank="11" pos="2,1">
+          <Combo isDown={isDown} setIsDown={setIsDown} rank="9" pos="2,1">
             AKo
           </Combo>
-          <Combo isDown={isDown} setIsDown={setIsDown} rank="18" pos="3,1">
+          <Combo isDown={isDown} setIsDown={setIsDown} rank="7" pos="3,1">
             AQo
           </Combo>
           <Combo isDown={isDown} setIsDown={setIsDown} rank="27" pos="4,1">
@@ -107,7 +107,7 @@ export function StandardComboFrame() {
           <Combo isDown={isDown} setIsDown={setIsDown} rank="6" pos="1,3">
             AQs
           </Combo>
-          <Combo isDown={isDown} setIsDown={setIsDown} rank="7" pos="2,3">
+          <Combo isDown={isDown} setIsDown={setIsDown} rank="18" pos="2,3">
             KQs
           </Combo>
           <Combo isDown={isDown} setIsDown={setIsDown} rank="3" pos="3,3">
@@ -148,7 +148,7 @@ export function StandardComboFrame() {
           <Combo isDown={isDown} setIsDown={setIsDown} rank="8" pos="1,4">
             AJs
           </Combo>
-          <Combo isDown={isDown} setIsDown={setIsDown} rank="9" pos="2,4">
+          <Combo isDown={isDown} setIsDown={setIsDown} rank="11" pos="2,4">
             KJs
           </Combo>
           <Combo isDown={isDown} setIsDown={setIsDown} rank="13" pos="3,4">
@@ -556,6 +556,10 @@ export function StandardComboFrame() {
         </div>
       </div>
       <div className="group-7">
+        <div className="saved-copies-1" onClick={() => setRanked(10)}>
+          <div className="text-wrapper-6">Top</div>
+          <div className="text-wrapper-6">10%</div>
+        </div>
         <div className="saved-copies-2" onClick={() => setRanked(25)}>
           <div className="text-wrapper-6">Top</div>
           <div className="text-wrapper-6">25%</div>

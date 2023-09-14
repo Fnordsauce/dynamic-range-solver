@@ -57,14 +57,7 @@ export function TopNav({ dispatch }) {
       <div className="frame-4">
         <div className="frame-5">
           {user ? (
-            <div className="frame-6">
-              <img
-                className="icon-tick-circle"
-                alt="Icon tick circle"
-                src="img\icon-tick-circle.svg"
-              />
-              <SaveFunction zeroArray={zeroArray} dispatch={dispatch} />
-            </div>
+            <SaveFunction zeroArray={zeroArray} dispatch={dispatch} />
           ) : (
             ""
           )}
