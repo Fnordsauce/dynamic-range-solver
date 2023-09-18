@@ -4,12 +4,14 @@ import { SideNav } from "./SideNav";
 import { TopNav } from "./TopNav";
 import { FrameProvider } from "./FrameContext";
 import "./style.css";
-import React, { useReducer } from "react";
+import React, { useContext, useEffect, useReducer } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
-import { AuthProvider } from "./auth/AuthContext";
+import { AuthContext, AuthProvider } from "./auth/AuthContext";
 import { RecentChartsDiv } from "./RecentChartsDiv";
 import Popup from "./Popup";
 import { ColourProvider } from "./ColourShifter/ColourContext";
+import ChartFrame from "./ChartFrame";
+import AuthModal from "./auth/AuthModal";
 
 <link
   rel="stylesheet"
@@ -34,11 +36,16 @@ export default function App() {
         <FrameProvider>
           <ColourProvider>
             <AuthProvider>
-              <ChartBuilder dispatch={dispatch} oncontextmenu="return false;" />
-              <SideNav dispatch={dispatch} />
-              <TopNav />
-              <RecentChartsDiv dispatch={dispatch} />
-              <ColourSelector />
+              <ChartFrame dispatch={dispatch}>
+                <ChartBuilder
+                  dispatch={dispatch}
+                  oncontextmenu="return false;"
+                />
+                <SideNav dispatch={dispatch} />
+                <TopNav />
+                <RecentChartsDiv dispatch={dispatch} />
+                <ColourSelector />
+              </ChartFrame>
             </AuthProvider>
           </ColourProvider>
         </FrameProvider>

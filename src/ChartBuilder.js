@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Combo } from "./Combo";
 import { FrameContext } from "./FrameContext";
-import CircularCursor from "./CircularCursor";
 import { ColourContext } from "./ColourShifter/ColourContext";
 
 export function ChartBuilder({ rank, id, dispatch }) {
@@ -20,7 +19,6 @@ export function StandardComboFrame() {
   return (
     <>
       <div className="frame borders" style={{ cursor: "none" }}>
-        <CircularCursor />
         <div className="frame-2">
           <Combo isDown={isDown} setIsDown={setIsDown} rank="1" pos="1,1">
             AA

@@ -6,26 +6,23 @@ import { AuthContext } from "./auth/AuthContext";
 import { signOut } from "@firebase/auth";
 import { auth } from "./firebase/firebase";
 import { Button } from "@chakra-ui/react";
-import SaveFunction from "./firestore/SaveFunction";
+import SaveFunction from "./firestore/SaveChartFunction";
 
 export function TopNav({ dispatch }) {
-  const { setUndone, setReset, zeroArray, setChartDisplay } =
-    useContext(FrameContext);
+  const { setUndone, setReset, zeroArray } = useContext(FrameContext);
   const { user } = useContext(AuthContext);
   const logout = () => {
     signOut(auth);
   };
-  function handleSave() {
-    SaveFunction();
-    window.location.reload(); // Reload the page after saving
-
-    setChartDisplay((prevDisplay) => (prevDisplay === 6 ? 1 : prevDisplay + 1));
+  function handleReset() {
+    setReset(true);
   }
+
   return (
     <div className="top-bar">
       <div className="saved-copies">
         {/* <Setting2 className="svgexport" /> */}
-        <div className="text-42">{user ? user.email : "Settings"}</div>
+        <div className="text-42">{user ? String(user.email) : "Settings"}</div>
       </div>
 
       <div className="frame-3">
@@ -45,7 +42,7 @@ export function TopNav({ dispatch }) {
           />
           <div className="text-wrapper-5">Redo</div>
         </div>
-        <div className="saved-copies" onClick={() => setReset(true)}>
+        <div className="saved-copies" onClick={handleReset}>
           <img
             className="svgexport"
             alt="Svgexport"

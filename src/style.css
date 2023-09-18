@@ -997,7 +997,7 @@
 
 .main .grid-four {
   height: 16px !important;
-  left: 8px !important;
+  left: -15px !important;
   position: absolute !important;
   top: 8px !important;
   width: 16px !important;
@@ -1028,7 +1028,7 @@
   background-position: 50% 50%;
   background-size: cover;
   border-radius: 8px;
-  height: 32px;
+  height: 100px;
   margin-bottom: -4px;
   margin-top: -4px;
   min-width: 32px;

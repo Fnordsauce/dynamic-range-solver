@@ -24,7 +24,7 @@ export function SideNav() {
                 </div>
                 <div
                   className="text"
-                  style={{ marginLeft: "20px", marginBottom: "-25px" }}
+                  style={{ marginLeft: "0px", marginBottom: "-35px" }}
                 >
                   Dashboard
                 </div>
@@ -39,7 +39,7 @@ export function SideNav() {
                 </div>
                 <div
                   className="text"
-                  style={{ marginLeft: "20px", marginBottom: "-25px" }}
+                  style={{ marginLeft: "0px", marginBottom: "-35px" }}
                 >
                   Notifications{" "}
                 </div>
@@ -49,12 +49,12 @@ export function SideNav() {
               <div className="content">
                 <div className="avatar-2">
                   <div className="avatar grid-four">
-                    <img src="..\img\gridfour.png"></img>
+                    <img src="..\img\activegridfour.png"></img>
                   </div>
                 </div>
                 <div
                   className="text"
-                  style={{ marginLeft: "20px", marginBottom: "-25px" }}
+                  style={{ marginLeft: "0px", marginBottom: "-35px" }}
                 >
                   Analytics
                 </div>

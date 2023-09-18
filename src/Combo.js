@@ -77,7 +77,7 @@ export function Combo({ children, rank, isDown, setIsDown, pos }) {
       if (highlight === "pink-div") zeroArray[firstVar2][secondVar2] = 2;
       if (highlight === "orange-div") zeroArray[firstVar2][secondVar2] = 3;
     },
-    [highlight, handHistory, undone, rank, highlight, setUndone]
+    [highlight, zeroArray]
   );
 
   // Undo Hook
