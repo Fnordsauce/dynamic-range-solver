@@ -12,6 +12,7 @@ import Popup from "./Popup";
 import { ColourProvider } from "./ColourShifter/ColourContext";
 import ChartFrame from "./ChartFrame";
 import AuthModal from "./auth/AuthModal";
+import StartScreen from "./StartScreen";
 
 <link
   rel="stylesheet"
@@ -37,10 +38,6 @@ export default function App() {
           <ColourProvider>
             <AuthProvider>
               <ChartFrame dispatch={dispatch}>
-                <ChartBuilder
-                  dispatch={dispatch}
-                  oncontextmenu="return false;"
-                />
                 <SideNav dispatch={dispatch} />
                 <TopNav />
                 <RecentChartsDiv dispatch={dispatch} />

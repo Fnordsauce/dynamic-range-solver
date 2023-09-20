@@ -12,9 +12,14 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import Login from "./auth/Login";
+import { ColourContext } from "./ColourShifter/ColourContext";
+import { ChartBuilder } from "./ChartBuilder";
+import StartScreen from "./StartScreen";
 
 function ChartFrame({ children, dispatch }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isActive } = useContext(ColourContext);
+  useEffect(() => {}, [isActive]);
 
   const { user, viewLogin, setViewLogin } = useContext(AuthContext);
   let onClickEvent = null;
@@ -50,6 +55,9 @@ function ChartFrame({ children, dispatch }) {
       ) : (
         ""
       )}
+
+      <ChartBuilder dispatch={dispatch} oncontextmenu="return false;" />
+
       {children}
     </div>
   );

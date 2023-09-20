@@ -7,10 +7,12 @@ import { signOut } from "@firebase/auth";
 import { auth } from "./firebase/firebase";
 import { Button } from "@chakra-ui/react";
 import SaveFunction from "./firestore/SaveChartFunction";
+import { ColourContext } from "./ColourShifter/ColourContext";
 
 export function TopNav({ dispatch }) {
   const { setUndone, setReset, zeroArray } = useContext(FrameContext);
   const { user } = useContext(AuthContext);
+  const { setIsActive } = useContext(ColourContext);
   const logout = () => {
     signOut(auth);
   };
@@ -48,7 +50,7 @@ export function TopNav({ dispatch }) {
             alt="Svgexport"
             src="img\svgexport-17-72-1.svg"
           />
-          <div className="text-wrapper-5">Reset</div>
+          <div className="text-wrapper-5">New Hand</div>
         </div>
       </div>
       <div className="frame-4">

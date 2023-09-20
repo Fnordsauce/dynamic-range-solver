@@ -52,6 +52,21 @@
   width: fit-content;
 }
 
+.main .start-frame {
+  align-items: flex-start;
+  background-color: #0b111d;
+  border: 6px solid lightgreen; /* Increase the border width and set it to white */
+  border-radius: 12px; /* Increase the border radius for a larger border */
+  display: flex;
+  gap: 3.46px;
+  left: 625px;
+  overflow: hidden;
+  padding: 20px; /* Adjust the padding as needed */
+  position: absolute;
+  top: 450px;
+  width: fit-content;
+}
+
 .main .frame-2 {
   align-items: flex-start;
   display: flex;

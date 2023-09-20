@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import AuthModal from "./auth/AuthModal";
 import SignUpModal from "./auth/SignUpModal";
+import { ColourContext } from "./ColourShifter/ColourContext";
 
 export function SideNav() {
+  const { currentColour } = useContext(ColourContext);
   return (
     <div>
       <div className="group">
@@ -19,14 +21,20 @@ export function SideNav() {
               <div className="content">
                 <div className="avatar-2">
                   <div className="avatar grid-four">
-                    <img src="..\img\gridfour.png"></img>
+                    <img
+                      src={
+                        currentColour === "purple-div"
+                          ? "img/activeGridFour.png"
+                          : "img/gridfour.png"
+                      }
+                    ></img>
                   </div>
                 </div>
                 <div
                   className="text"
                   style={{ marginLeft: "0px", marginBottom: "-35px" }}
                 >
-                  Dashboard
+                  Pre-Flop
                 </div>
               </div>
             </div>
@@ -34,14 +42,20 @@ export function SideNav() {
               <div className="content">
                 <div className="avatar-2">
                   <div className="avatar grid-four">
-                    <img src="..\img\gridfour.png"></img>
+                    <img
+                      src={
+                        currentColour === "orange-div"
+                          ? "img/activeGridFour.png"
+                          : "img/gridfour.png"
+                      }
+                    ></img>
                   </div>
                 </div>
                 <div
                   className="text"
                   style={{ marginLeft: "0px", marginBottom: "-35px" }}
                 >
-                  Notifications{" "}
+                  Flop{" "}
                 </div>
               </div>
             </div>
@@ -49,14 +63,41 @@ export function SideNav() {
               <div className="content">
                 <div className="avatar-2">
                   <div className="avatar grid-four">
-                    <img src="..\img\activegridfour.png"></img>
+                    <img
+                      src={
+                        currentColour === "pink-div"
+                          ? "img/activeGridFour.png"
+                          : "img/gridfour.png"
+                      }
+                    ></img>
                   </div>
                 </div>
                 <div
                   className="text"
                   style={{ marginLeft: "0px", marginBottom: "-35px" }}
                 >
-                  Analytics
+                  Turn{" "}
+                </div>
+              </div>
+            </div>
+            <div className="list-manu">
+              <div className="content">
+                <div className="avatar-2">
+                  <div className="avatar grid-four">
+                    <img
+                      src={
+                        currentColour === "green-div"
+                          ? "img/activeGridFour.png"
+                          : "img/gridfour.png"
+                      }
+                    ></img>
+                  </div>
+                </div>
+                <div
+                  className="text"
+                  style={{ marginLeft: "0px", marginBottom: "-35px" }}
+                >
+                  River
                 </div>
               </div>
             </div>

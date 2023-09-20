@@ -29,7 +29,7 @@ export function ColourSelector() {
       <div
         className={currentColour === "purple-div" ? "box-9-active" : "box-9"}
         onClick={handlePurpleChange}
-      />
+      ></div>
       <div
         className={currentColour === "pink-div" ? "box-10-active" : "box-10"}
         onClick={handlePinkChange}

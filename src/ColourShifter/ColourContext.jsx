@@ -5,9 +5,12 @@ const ColourContext = createContext();
 
 function ColourProvider({ children }) {
   const [currentColour, setCurrentColour] = useState("purple-div");
+  const [isActive, setIsActive] = useState(false);
 
   return (
-    <ColourContext.Provider value={{ currentColour, setCurrentColour }}>
+    <ColourContext.Provider
+      value={{ currentColour, setCurrentColour, isActive, setIsActive }}
+    >
       {children}
     </ColourContext.Provider>
   );
