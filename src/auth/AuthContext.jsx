@@ -20,7 +20,7 @@ function AuthProvider({ children }) {
       // ...
     } else {
       setUserStatus(false);
-      setViewLogin(true);
+      setViewLogin(false);
 
       console.log("user signed out");
 
