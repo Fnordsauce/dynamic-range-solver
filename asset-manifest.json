@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.0690107e.css",
-    "main.js": "/react-gh-pages/static/js/main.b47165ac.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.0690107e.css.map": "/react-gh-pages/static/css/main.0690107e.css.map",
-    "main.b47165ac.js.map": "/react-gh-pages/static/js/main.b47165ac.js.map"
+    "main.css": "/dynamic-range-solver/static/css/main.0690107e.css",
+    "main.js": "/dynamic-range-solver/static/js/main.d6b28944.js",
+    "index.html": "/dynamic-range-solver/index.html",
+    "main.0690107e.css.map": "/dynamic-range-solver/static/css/main.0690107e.css.map",
+    "main.d6b28944.js.map": "/dynamic-range-solver/static/js/main.d6b28944.js.map"
   },
   "entrypoints": [
     "static/css/main.0690107e.css",
-    "static/js/main.b47165ac.js"
+    "static/js/main.d6b28944.js"
   ]
 }
