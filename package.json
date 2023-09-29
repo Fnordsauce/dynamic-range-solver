@@ -1,7 +1,7 @@
 {
   "name": "dynamic-range-solver",
   "version": "0.1.0",
-  "homepage": "https://Fnordsauce.github.io/react-gh-pages",
+  "homepage": "https://fnordsauce.github.io/dynamic-range-solver/",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.0",
