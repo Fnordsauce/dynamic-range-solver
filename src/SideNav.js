@@ -14,7 +14,11 @@ export function SideNav() {
       <div className="menu">
         <div className="top">
           <div className="profile">
-            <img className="avatar" alt="Avatar" src="img\final_logo.png" />
+            <img
+              className="avatar"
+              alt="Avatar"
+              src="dynamic-range-solver/img\final_logo.png"
+            />
           </div>
           <div className="list-item">
             <div className="list-manu">
@@ -24,8 +28,8 @@ export function SideNav() {
                     <img
                       src={
                         currentColour === "purple-div"
-                          ? "img/activeGridFour.png"
-                          : "img/gridfour.png"
+                          ? "dynamic-range-solver/img/activeGridFour.png"
+                          : "dynamic-range-solver/img/gridfour.png"
                       }
                     ></img>
                   </div>
@@ -45,8 +49,8 @@ export function SideNav() {
                     <img
                       src={
                         currentColour === "orange-div"
-                          ? "img/activeGridFour.png"
-                          : "img/gridfour.png"
+                          ? "dynamic-range-solver/img/activeGridFour.png"
+                          : "dynamic-range-solver/img/gridfour.png"
                       }
                     ></img>
                   </div>
@@ -66,8 +70,8 @@ export function SideNav() {
                     <img
                       src={
                         currentColour === "pink-div"
-                          ? "img/activeGridFour.png"
-                          : "img/gridfour.png"
+                          ? "dynamic-range-solver/img/activeGridFour.png"
+                          : "dynamic-range-solver/img/gridfour.png"
                       }
                     ></img>
                   </div>
@@ -87,8 +91,8 @@ export function SideNav() {
                     <img
                       src={
                         currentColour === "green-div"
-                          ? "img/activeGridFour.png"
-                          : "img/gridfour.png"
+                          ? "dynamic-range-solver/img/activeGridFour.png"
+                          : "dynamic-range-solver/img/gridfour.png"
                       }
                     ></img>
                   </div>

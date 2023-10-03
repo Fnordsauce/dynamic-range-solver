@@ -32,7 +32,7 @@ export function TopNav({ dispatch }) {
           <img
             className="svgexport"
             alt="Svgexport"
-            src="img/svgexport-17-71-1.svg"
+            src="dynamic-range-solver/img\svgexport-17-71-1.svg"
           />
           <div className="text-wrapper-5">Undo</div>
         </div>
@@ -40,7 +40,7 @@ export function TopNav({ dispatch }) {
           <img
             className="svgexport"
             alt="Svgexport"
-            src="img\svgexport-17-71-1-1.svg"
+            src="dynamic-range-solver/img\svgexport-17-71-1-1.svg"
           />
           <div className="text-wrapper-5">Redo</div>
         </div>
@@ -48,7 +48,7 @@ export function TopNav({ dispatch }) {
           <img
             className="svgexport"
             alt="Svgexport"
-            src="img\svgexport-17-72-1.svg"
+            src="dynamic-range-solver/img\svgexport-17-72-1.svg"
           />
           <div className="text-wrapper-5">New Hand</div>
         </div>
@@ -61,7 +61,11 @@ export function TopNav({ dispatch }) {
             ""
           )}
 
-          <img className="line" alt="Line" src="img/line-1.svg" />
+          <img
+            className="line"
+            alt="Line"
+            src="dynamic-range-solver/img/line-1.svg"
+          />
           {user ? "" : <AuthModal dispatch={dispatch} />}
           {user ? "" : <SignUpModal dispatch={dispatch} />}
           {!user ? (

@@ -37,7 +37,7 @@ function SaveFunction({ zeroArray }) {
       <img
         className="icon-tick-circle"
         alt="Icon tick circle"
-        src="img\icon-tick-circle.svg"
+        src="dynamic-range-solver/img\icon-tick-circle.svg"
       />
       <div className="text-wrapper-6">Save Chart</div>
     </div>
