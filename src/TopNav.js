@@ -44,7 +44,7 @@ export function TopNav({ dispatch }) {
           />
           <div className="text-wrapper-5">Redo</div>
         </div>
-        <div className="saved-copies" onClick={handleReset}>
+        <div className="saved-copies" onClick={() => handleReset}>
           <img
             className="svgexport"
             alt="Svgexport"
