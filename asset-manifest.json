@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/dynamic-range-solver/static/css/main.0690107e.css",
-    "main.js": "/dynamic-range-solver/static/js/main.d6b28944.js",
+    "main.js": "/dynamic-range-solver/static/js/main.9c04c0b7.js",
     "index.html": "/dynamic-range-solver/index.html",
     "main.0690107e.css.map": "/dynamic-range-solver/static/css/main.0690107e.css.map",
-    "main.d6b28944.js.map": "/dynamic-range-solver/static/js/main.d6b28944.js.map"
+    "main.9c04c0b7.js.map": "/dynamic-range-solver/static/js/main.9c04c0b7.js.map"
   },
   "entrypoints": [
     "static/css/main.0690107e.css",
-    "static/js/main.d6b28944.js"
+    "static/js/main.9c04c0b7.js"
   ]
 }
